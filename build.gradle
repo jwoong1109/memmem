@@ -17,7 +17,7 @@ jar{
 }
 
 bootJar{
-	archiveFileName= "memmem.jar"
+	archiveFileName= "memmem.jar" 
 }
 
 configurations {
