@@ -16,9 +16,9 @@ permissions:
 hooks:
 
 #애플리케이션 파일이 대상 인스턴스에 복사된 후에 실행
-  AfterInstall:
-    - location: scripts/stop.sh    
-      timeout: 60
+#  AfterInstall:
+#    - location: scripts/stop.sh    
+#      timeout: 60
 
 #애플리케이션이 시작될 때 실행
   ApplicationStart:
