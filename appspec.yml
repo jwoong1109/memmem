@@ -3,7 +3,7 @@ os: linux
 #배포한 파일 위치 지정 :  /home/ec2-user/codedeploy 디렉토리가 존재해야함
 files:
   - source: /
-    destination: /home/ec2-user/codedeploy
+    destination: /home/ec2-user/codedeploy/memmem
     overwrite: true
     
 #배포한 파일이 ec2-user 권한으로 적용됨
