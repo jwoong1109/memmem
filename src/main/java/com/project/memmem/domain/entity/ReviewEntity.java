@@ -63,6 +63,7 @@ public class ReviewEntity {
                 .imageUrl(reviewEntity.getImageUrl(imgHost))
                 .title(reviewEntity.getTitle())
                 .content(reviewEntity.getContent())
+                .createdAt(reviewEntity.getCreatedAt())
                 .build();
     }
 
@@ -77,17 +78,23 @@ public class ReviewEntity {
 	}
 
 	
-
 	public void setMainImageBucketKey(String bucketKey) {
-		this.mainImageBucketKey = bucketKey;
-		
+	    this.mainImageBucketKey = bucketKey;
 	}
+
 
 	public void update(ReviewUpDateDTO dto) {
 		
 		this.title = dto.getTitle();
 		this.content = dto.getContent();
-		this.mainImageBucketKey = dto.getMainImageBucketKey(); // DTO에서 이미지 키를 가져옵니다.
+		//this.mainImageBucketKey = dto.getMainImageBucketKey(); // DTO에서 이미지 키를 가져옵니다.
+		 this.mainImageBucketKey = dto.getImageUrl();  // `dto.getImageUrl()`이 올바른 URL을 반환해야 함
+	}
+
+	public void updateWithoutImage(ReviewUpDateDTO dto) {
+		this.title = dto.getTitle();
+	    this.content = dto.getContent();
+	    // 이미지 관련 필드는 업데이트하지 않음
 		
 	}
 }
