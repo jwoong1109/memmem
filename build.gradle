@@ -17,7 +17,7 @@ jar{
 }
 
 bootJar{
-	archiveFileName= "memmem.jar"
+	archiveFileName= "memmem.jar" 
 }
 
 configurations {
@@ -87,4 +87,3 @@ tasks.named('test') {
 tasks.withType(JavaExec) {
     systemProperty 'user.dir', project.rootDir.absolutePath
 }
-

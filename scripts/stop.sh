@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR="/home/ec2-user/codedeploy"
+ROOT_DIR="/home/ec2-user/codedeploy/memmem"
 DEPLOY_LOG="$ROOT_DIR/deploy.log"
 DATE=`date +"[%Y-%m-%d %H:%M:%S]"`
 FILE_NAME="greenApp.jar"
