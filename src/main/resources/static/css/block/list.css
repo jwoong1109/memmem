@@ -1,13 +1,8 @@
 @charset "UTF-8";
 
-.gap {
-	padding-bottom: 12px;
-}
-
 .menu-itemm {
 	padding: 14px 15px;
 	padding-right: 143px;
-	margin-top: 100px;
 	background-color: #ffffff;
 	border-radius: 6px;
 	font-size: 16px;
@@ -15,6 +10,8 @@
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
+	display: inline-block;
+	white-space: nowrap;
 }
 
 .menu-itemm:hover {
@@ -50,7 +47,7 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	width: 800px;
+	width: 700px;
 }
 
 /*/////////////////스크롤바////////////////////*/
@@ -85,33 +82,21 @@
 	text-decoration: none;
 }
 
-.contact {
-	width: 450px;
-	display: flex;
-	align-items: center;
-	background-color: white;
-	border-radius: 10px;
-	padding: 10px;
-	margin-bottom: 10px;
-	display: flex;
-}
-
-.blockContainer {
+.block-container {
 	border-radius: 10px;
 	border: 1px solid #ddd;
-	width: 80%;
-	margin: auto;
-	
+	margin: 20px;
 	padding: 20px;
 }
 
 .line {
-	display: flex;	
+	display: flex;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 .block-item {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #ddd;
 	padding: 10px 0;
@@ -119,7 +104,25 @@
 }
 
 .block-item:last-child {
-    border-bottom: none;
+	border-bottom: none;
+}
+
+.block-user {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+.block-profile {
+	margin-left: 5px;
+}
+
+.block-user2 {
+	display: flex;
+	align-items: center;
+	
 }
 
 .block-item button {
@@ -133,11 +136,6 @@
 
 .block-item button:hover {
 	background-color: #0046FE;
-}
-
-.block-item div {
-	margin-right: 20px;
-	padding-bottom: 7px;
 }
 
 .contact-info {
