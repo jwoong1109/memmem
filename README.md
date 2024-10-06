@@ -18,7 +18,7 @@
 ## 💻 개발 환경
 - **버전**: Java 17
 - **IDE**: Spring Tool Suite (STS)
-- **프레임워크**: SpringBoot 3.3
+- **프레임워크**: SpringBoot 3.2.9
 - **ORM**: JPA
 
 ## ⚙️ 기술 스택
